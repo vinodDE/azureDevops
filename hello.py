@@ -5,7 +5,7 @@ import click
 @click.option("--color", prompt="I need your color", help="This is your color")
 def hello(name, color):
     if name == "Thor":
-        click.echo("Thor, you are always red.")
+        click.echo("Thor, you are always red!")
         click.echo(click.style(f"Hello {name}!", fg="red"))
     else:
         click.echo(f"Your color is {color}!")
